@@ -13,7 +13,7 @@ body{
 
 /* styling section1 */
 .section1{
-    background-color: #3366FF;
+    background-color: #E14D2A;
     position: relative;
     flex: 1;
 }
@@ -31,6 +31,7 @@ body{
 
 /* styling section 2 */
 .section2{
+    background-color: #F8FFDB;
     padding: 150px;
     display: flex;
     flex-direction: column;
@@ -44,10 +45,10 @@ body{
     align-items: center;
 }
 .logo-wetick{
-    color: #3366FF;
+    color: #E14D2A;
 }
 .logo-wetick span{
-    color: #FF3D71;
+    color: #48E0E4;
 }
 .sign-in{
     font-weight: 600;
@@ -85,7 +86,7 @@ input{
     align-items: center;
 }
 .btn-signin{
-    background-color: #3366FF;
+    background-color: #FD841F;
     color: white;
     font-size: 14px;
     height: 30px;
@@ -93,8 +94,9 @@ input{
     border: 1px solid;
     outline: none;
     padding: 0 88px;
+    
 
-    box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.178);
+    box-shadow: 0px 8px 10px rgba(255, 167, 35, 0.178);
 }
 
 .forgot a{
@@ -124,7 +126,7 @@ input{
 }
 .bdr-google{
     box-sizing: border-box;
-    border: 1px solid #3366ff;
+    border: 1px solid #FD841F;
     border-radius: 6px;
     padding: 5px 25px;
 
@@ -134,7 +136,7 @@ input{
 }
 .bdr-fb{
     box-sizing: border-box;
-    border: 1px solid #3366ff;
+    border: 1px solid #FD841F;
     border-radius: 6px;
     padding: 5px 25px;
 
@@ -153,10 +155,11 @@ input{
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     margin: 0 55px;
 }
-.header .header-nav{
+.header .header-nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -164,7 +167,7 @@ input{
     gap: 25px;
 }
 .href a{
-    color:#3366FF;
+    color:#FD841F;
     text-decoration: none;
 }
 
@@ -178,7 +181,7 @@ input{
 .header-in button{
     padding: 0 50px;
     text-align: center;
-    background-color: #3366FF;
+    background-color: #FD841F;
     color: white;
     font-size: 14px;
     height: 30px;
@@ -186,12 +189,12 @@ input{
     border: 1px solid;
     outline: none;
 
-    box-shadow: 0px 8px 10px rgba(35, 149, 255, 0.178);
+    box-shadow: 0px 8px 10px rgba(255, 160, 35, 0.178);
 }
 
 /* styling banner */
 .banner{
-    background-color: #3366FF;
+    background-color: #E14D2A;
     position: relative;
     height: 750px;
 }
@@ -234,7 +237,7 @@ input{
     border: 1px solid;
     border-radius: 30px;
     border-style: none;
-    background: rgba(255, 61, 113, 0.25);
+    background: #FFE15D;
 
     display: flex;
     flex-direction: row;
