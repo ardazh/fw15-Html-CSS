@@ -57,10 +57,11 @@ body{
 .text-hi{
     font-weight: 400;
     font-size: 10px;
+    margin-bottom: 25px;
 }
 
 /* styling form input */
-input{
+.form-input input{
     height: 35px;
     width: 180px;
     border-radius: 10px;
@@ -156,6 +157,7 @@ input{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 90px;
     padding: 10px;
     margin: 0 55px;
 }
@@ -166,7 +168,7 @@ input{
     align-items: center;
     gap: 25px;
 }
-.href a{
+.href{
     color:#FD841F;
     text-decoration: none;
 }
@@ -227,17 +229,18 @@ input{
 
 .set-bdr-event{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .bdr-event{
-    margin-top: 175px;
     width: 150px;
     height: 30px;
     border: 1px solid;
     border-radius: 30px;
     border-style: none;
     background: #FFE15D;
+    font-size: 12px;
 
     display: flex;
     flex-direction: row;
