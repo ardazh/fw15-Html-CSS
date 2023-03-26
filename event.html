@@ -21,20 +21,22 @@
 <body>
     <div class="flex flex-col">
         <header>
-            <div class="flex justify-between items-center h-24 px-12">
-                <div class="flex">
-                    <img src="/assets/logo-wetick.png" alt="Logo Wetick">
-                    <span class="flex items-center text-[#E14D2A]">
-                        we
-                    </span>
-                    <span class="flex items-center text-[#48E0E4]">
-                        tick
-                    </span>
-                </div>
+            <div class="flex justify-between items-center h-24 px-12 text-sm">
+                <a href="/index.html">
+                    <div class="flex text-2xl">
+                        <img src="/assets/logo-wetick.png" alt="Logo Wetick">
+                        <span class="flex items-center text-[#E14D2A]">
+                            we
+                        </span>
+                        <span class="flex items-center text-[#48E0E4]">
+                            tick
+                        </span>
+                    </div>
+                </a>
                 <div>
                     <ul class="flex gap-12">
                         <li>
-                            <a href="/home.html">home</a>
+                            <a href="/index.html">home</a>
                             <hr style="width: 45px; height: 3px; background-color: #FD841F ;">
                         </li>
                         <li>
@@ -45,19 +47,21 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex justify-center items-center gap-3.5">
-                    <div class="inline-block rounded-full p-[2px] bg-gradient-to-r from-cyan-500 to-blue-500">
-                        <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="/assets/profile1.jpg" alt="profile1">
+                <a href="/profile-edit-profile.html">
+                    <div class="flex items-center gap-3.5">
+                        <div class="inline-block rounded-full p-[2px] bg-gradient-to-r from-cyan-500 to-blue-500">
+                            <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="/assets/profile1.jpg" alt="profile1">
+                        </div>
+                        <div>
+                            Kim Ji-soo
+                        </div>
                     </div>
-                    <div>
-                        Kim Ji-soo
-                    </div>
-                </div>
+                </a>
             </div>
         </header>
         <main class="bg-[#F4F7FF]">
-            <div class="flex justify-center bg-white px-11 py-14 mx-24 mt-16 rounded-2xl">
-                <section class="flex flex-col justify-center gap-12">
+            <div class="flex justify-center flex-1 gap-10 bg-white px-11 py-14 mx-24 mt-16 rounded-2xl">
+                <section class="flex flex-col gap-12">
                     <div>
                         <img src="/assets/picture1.png" alt="picture1">
                     </div>
@@ -65,53 +69,77 @@
                         <div>
                             <i data-feather="heart"></i>
                         </div>
-                        <div>
+                        <div class="text-xl tracking-[1px]">
                             Add to Wishlist
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div>
+                    <div class="text-2xl tracking-[2px] w-56 mb-7">
                         Sights & Sounds Exhibition
                     </div>
-                    <div>
-                        <div>
-                            Jakarta, Indonesia
+                    <div class="flex gap-20 text-sm font-medium tracking-[1px] mb-7">
+                        <div class="flex gap-2">
+                            <div>
+                                <i data-feather="map-pin"></i>
+                            </div>
+                            <div>
+                                Jakarta, Indonesia
+                            </div>
                         </div>
-                        <div>
-                            Wed, 15 Nov, 4:00 PM
+                        <div class="flex gap-2">
+                            <div>
+                               <i data-feather="clock"></i> 
+                            </div>
+                            <div>
+                                Wed, 15 Nov, 4:00 PM
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="flex flex-col gap-3 mb-12">
+                        <div class="text-sm font-medium tracking-[0.5px]">
                             Attendees
                         </div>
-                        <div>
-                            <img src="" alt="profile5">
+                        <div class="flex">
+                            <div class="w-7 h-7 rounded-full overflow-hidden border-2 -ml-2">
+                                <img class="object-cover w-full h-full" src="/assets/profile1.jpg" alt="profile1">
+                            </div>
+                            <div class="w-7 h-7 rounded-full overflow-hidden border-2 -ml-2">
+                                <img class="object-cover w-full h-full" src="/assets/profile2.jpg" alt="profile2">
+                            </div>
+                            <div class="w-7 h-7 rounded-full overflow-hidden border-2 -ml-2">
+                                <img class="object-cover w-full h-full" src="/assets/profile3.jpg" alt="profile3">
+                            </div>
+                            <div class="w-7 h-7 rounded-full overflow-hidden border-2 -ml-2 relative">
+                                <div class="absolute w-full h-full bg-[rgba(255,225,93,0.5)] text-[10px]">+99</div>
+                                <img class="object-cover w-full h-full" src="/assets/profile4.jpg" alt="profile4">
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="flex flex-col gap-3.5 mb-6">
+                        <div class="text-xl tracking-[1px]">
                             Event Detail
                         </div>
-                        <div>
+                        <div class="text-xs font-normal text-[#373A42BF] w-[462px]">
                             After his controversial art exhibition "Tear and Consume" back in November 2018, in which guests were invited to tear up…
                         </div>
-                        <div>
+                        <div class="font-medium text-xs text-[#FD841F]">
                             Read More
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="flex flex-col gap-3.5 mb-12">
+                        <div class="text-xl tracking-[1px]">
                             Location
                         </div>
                         <div>
-                            <img src="" alt="mapslocatiton">
+                            <img src="/assets/location.png" alt="mapslocatiton">
                         </div>
                     </div>
                     <div>
-                        <div>
-                            <a href="/booking.html">Buy Tickets</a>
+                        <div class="text-white text-base">
+                            <a href="/booking.html">
+                                <button class="w-72 h-14 border border-1 rounded-lg bg-[#FD841F] shadow-lg shadow-orange-500/50" type="submit">Buy Tickets</button>
+                            </a>
                         </div>
                     </div>
                 </section>
