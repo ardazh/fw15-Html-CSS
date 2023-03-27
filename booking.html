@@ -13,13 +13,14 @@
 
     <!-- script tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
 
     <title>Page[Booking]</title>
 </head>
-<body>
-    <div class="flex flex-col">
-        <header>
-            <div class="flex justify-between items-center h-24 px-12 text-sm">
+<body class="bg-[#F4F7FF]">
+    <header class="bg-white">
+        <div class="flex justify-between items-center h-24 px-5 md:px-12 text-sm">
+            <a href="/index.html">
                 <div class="flex text-2xl">
                     <img src="/assets/logo-wetick.png" alt="Logo Wetick">
                     <span class="flex items-center text-[#E14D2A]">
@@ -29,20 +30,22 @@
                         tick
                     </span>
                 </div>
-                <div>
-                    <ul class="flex gap-12">
-                        <li>
-                            <a href="/index.html">home</a>
-                            <hr style="width: 45px; height: 3px; background-color: #FD841F ;">
-                        </li>
-                        <li>
-                            Create Event
-                        </li>
-                        <li>
-                            Location
-                        </li>
-                    </ul>
-                </div>
+            </a>
+            <div class="hidden md:block">
+                <ul class="flex gap-12">
+                    <li>
+                        <a href="/index.html">home</a>
+                        <hr style="width: 45px; height: 3px; background-color: #FD841F ;">
+                    </li>
+                    <li>
+                        Create Event
+                    </li>
+                    <li>
+                        Location
+                    </li>
+                </ul>
+            </div>
+            <a class="hidden md:block" href="/profile-edit-profile.html">
                 <div class="flex items-center gap-3.5">
                     <div class="inline-block rounded-full p-[2px] bg-gradient-to-r from-cyan-500 to-blue-500">
                         <img class="w-11 h-11 object-cover rounded-full border-2 border-white" src="/assets/profile1.jpg" alt="profile1">
@@ -51,21 +54,29 @@
                         Kim Ji-soo
                     </div>
                 </div>
+            </a>
+
+            <div class="block md:hidden ">
+                <div class="flex justify-center items-center h-full">
+                    <i data-feather="align-justify"></i>
+                </div>
             </div>
-        </header>
-        <main class="bg-[#F4F7FF]">
-            <div class="flex justify-center bg-white px-11 py-14 mx-24 mt-16 rounded-2xl w-[1126px]">
-                <section class="w-[500px] h-[410px]">
-                    <div>
+        </div>
+    </header>
+    <main class="flex flex-col items-center md:mt-16">
+        <div class="w-100% md:w-[95%] lg:w-[75%]">
+            <div class="flex flex-col md:flex-row justify-start lg:gap-11 bg-white md:rounded-3xl w-full px-7 lg:px-12 py-12">
+                <section class="w-full lg:w-[40%] h-[70%] ">
+                    <div class="w-full">
                         <img src="/assets/sketch.png" alt="sketch">
                     </div>
                     <div>
                         
                     </div>
                 </section>
-                <section>
-                    <div class="flex items-center mb-14">
-                        <div class="text-xl tracking-[1px] font-bold mr-48">
+                <section class="w-full lg:w-[60%]">
+                    <div class="flex items-center justify-between mb-14">
+                        <div class="text-xl tracking-[1px] font-bold">
                             Tickets
                         </div>
                         <div class="flex justify-center items-center gap-3.5 text-xs ">
@@ -77,129 +88,114 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-x-3.5 mb-12">
-                        <div class="flex">
-                            <div class="w-11 h-11 mr-3.5">
+                    <div class="flex flex-col gap-7 w-full">
+                        <div class="flex items-start justify-start gap-4 w-full">
+                            <div class="w-[50px]">
                                 <img src="/assets/row1.png" alt="row1">
                             </div>
-                            <div class="flex">
-                                <div class="flex flex-col">
-                                    <div class="text-sm font-bold tracking-[2px] mr-20">
-                                        SECTION REG, ROW 1
-                                    </div>
-                                    <div class="text-xs font-medium text-[#BDC0C4] mb-5">
-                                        12 Seats available
-                                    </div>
+                            <div class="flex flex-col gap-2.5 w-[60%]">
+                                <div class="text-sm font-bold tracking-[2px]">
+                                    SECTION REG, ROW 1
                                 </div>
-                                <div class="flex flex-col items-center">
+                                <div class="text-xs font-medium text-[#BDC0C4]">
+                                    12 Seats available
+                                </div>
+                                <div class="">
+                                    Quantity
+                                </div>
+                            </div>
+                            <div class="flex justify-end w-[30%]">
+                                <div class="flex flex-col items-center gap-2.5">
                                     <div class="font-bold">
                                         $15
                                     </div>
                                     <div class="text-xs font-medium text-[#BDC0C4]">
                                         per person
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex text-xs font-bold tracking-[1px]">
-                                <div class="flex ml-14 mr-40">
-                                    Quantity
-                                </div>
-                                <div class="flex gap-5">
-                                    <div class="border border-2 rounded-md">
-                                        <img src="/assets/minus.png" alt="minus">
-                                    </div>
-                                    <p>0</p>
-                                    <div class="border border-2 rounded-md">
-                                        <img src="/assets/plus.png" alt="plus">
+                                    <div class="flex gap-5">
+                                        <div class="border border-2 rounded-md">
+                                            <img src="/assets/minus.png" alt="minus">
+                                        </div>
+                                        <p>0</p>
+                                        <div class="border border-2 rounded-md">
+                                            <img src="/assets/plus.png" alt="plus">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-x-3.5 mb-12">
-                        <div class="flex">
-                            <div class="w-11 h-11 mr-3.5">
+                        <div class="flex items-start justify-start gap-4 w-full">
+                            <div class="w-[50px]">
                                 <img src="/assets/row1.png" alt="row1">
                             </div>
-                            <div class="flex">
-                                <div class="flex flex-col">
-                                    <div class="text-sm font-bold tracking-[2px] mr-20">
-                                        SECTION VIP, ROW 2
-                                    </div>
-                                    <div class="text-xs font-medium text-[#BDC0C4] mb-5">
-                                        19 Seats available
-                                    </div>
+                            <div class="flex flex-col gap-2.5 w-[60%]">
+                                <div class="text-sm font-bold tracking-[2px]">
+                                    SECTION REG, ROW 1
                                 </div>
-                                <div class="flex flex-col items-center">
+                                <div class="text-xs font-medium text-[#BDC0C4]">
+                                    12 Seats available
+                                </div>
+                                <div class="">
+                                    Quantity
+                                </div>
+                            </div>
+                            <div class="flex justify-end w-[30%]">
+                                <div class="flex flex-col items-center gap-2.5">
                                     <div class="font-bold">
-                                        $35
+                                        $15
                                     </div>
                                     <div class="text-xs font-medium text-[#BDC0C4]">
                                         per person
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex text-xs font-bold tracking-[1px]">
-                                <div class="flex ml-14 mr-40">
-                                    Quantity
-                                </div>
-                                <div class="flex gap-5">
-                                    <div class="border border-2 rounded-md">
-                                        <img src="/assets/minus.png" alt="minus">
-                                    </div>
-                                    <p>2</p>
-                                    <div class="border border-2 rounded-md">
-                                        <img src="/assets/plus.png" alt="plus">
+                                    <div class="flex gap-5">
+                                        <div class="border border-2 rounded-md">
+                                            <img src="/assets/minus.png" alt="minus">
+                                        </div>
+                                        <p>0</p>
+                                        <div class="border border-2 rounded-md">
+                                            <img src="/assets/plus.png" alt="plus">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="flex flex-col gap-x-3.5 mb-12">
-                        <div class="flex">
-                            <div class="w-11 h-11 mr-3.5">
+                        <div class="flex items-start justify-start gap-4 w-full">
+                            <div class="w-[50px]">
                                 <img src="/assets/row1.png" alt="row1">
                             </div>
-                            <div class="flex">
-                                <div class="flex flex-col">
-                                    <div class="text-sm font-bold tracking-[2px] mr-20">
-                                        SECTION VVIP, ROW 3
-                                    </div>
-                                    <div class="text-xs font-medium text-[#BDC0C4] mb-5">
-                                        6 Seats available
-                                    </div>
+                            <div class="flex flex-col gap-2.5 w-[60%]">
+                                <div class="text-sm font-bold tracking-[2px]">
+                                    SECTION REG, ROW 1
                                 </div>
-                                <div class="flex flex-col items-center">
+                                <div class="text-xs font-medium text-[#BDC0C4]">
+                                    12 Seats available
+                                </div>
+                                <div class="">
+                                    Quantity
+                                </div>
+                            </div>
+                            <div class="flex justify-end w-[30%]">
+                                <div class="flex flex-col items-center gap-2.5">
                                     <div class="font-bold">
-                                        $50
+                                        $15
                                     </div>
                                     <div class="text-xs font-medium text-[#BDC0C4]">
                                         per person
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex text-xs font-bold tracking-[1px]">
-                                <div class="flex ml-14 mr-40">
-                                    Quantity
-                                </div>
-                                <div class="flex gap-5">
-                                    <div class="border border-2 rounded-md">
-                                        <img src="/assets/minus.png" alt="minus">
-                                    </div>
-                                    <p>0</p>
-                                    <div class="border border-2 rounded-md">
-                                        <img src="/assets/plus.png" alt="plus">
+                                    <div class="flex gap-5">
+                                        <div class="border border-2 rounded-md">
+                                            <img src="/assets/minus.png" alt="minus">
+                                        </div>
+                                        <p>0</p>
+                                        <div class="border border-2 rounded-md">
+                                            <img src="/assets/plus.png" alt="plus">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div>
                         <div class="flex justify-between tracking-[0.5px] mb-4">
                             <div class="text-sm font-bold">
@@ -230,66 +226,72 @@
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="self-center">
                         <a href="/payment.html">
                             <div>
-                                <button class="w-[315px] h-14 border border-1 rounded-lg bg-[#FD841F] shadow-lg shadow-orange-500/50 text-white">Checkout</button>
+                                <button class="w-full md:max-w-full lg:max-w-[350px] h-14 border border-1 rounded-lg bg-[#FD841F] shadow-lg shadow-orange-500/50">Checkout</button>
                             </div>
                         </a>
                     </div>
                 </section>
             </div>
-            <footer class="mt-36">
-                <div class="flex flex-row gap-[153px] justify-center">
-                    <div class="flex flex-col">
-                        <div class="flex justify-center items-center text-2xl">
-                            <div>
-                                <img src="/assets/logo-wetick.png" alt="Logo Wetick">
-                            </div>
-                            <div>
-                                <span class="text-[#E14D2A]">we</span>
-                                <span class="text-[#48E0E4]">tick</span>
-                            </div>
+        </div>
+    </main>
+    <footer class="bg-white md:bg-[#F4F7FF] pt-20">
+        <div class="flex flex-col gap-7 px-7 md:px-32">
+            <div class="flex flex-col gap-7 md:gap-0 md:flex-row justify-between">
+                <div class="flex flex-col gap-5">
+                    <div class="flex justify-start items-center">
+                        <div>
+                            <img src="/assets/logo-wetick.png" alt="Logo Wetick">
                         </div>
                         <div>
-                            <p class="font-medium text-sm">Find events you love with our</p>
-                            <div class="flex flex-row">
-                                <img src="/assets/findevent1.png" alt="findevent1">
-                                <img src="/assets/findevent2.png" alt="findevent2">
-                                <img src="/assets/findevent3.png" alt="findevent3">
-                                <img src="/assets/findevent4.png" alt="findevent4">
-                            </div>
-                        </div>
-                        <div class="mt-36">
-                            <p class="font-semibold text-base">&copy;2020 Wetick All Rights Reserved</p>
+                            <span class="text-[#E14D2A]">we</span>
+                            <span class="text-[#48E0E4]">tick</span>
                         </div>
                     </div>
-                    <div>
-                        <p class="font-semibold text-base tracking-[1px]">Wetick</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">About Us</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Features</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Blog</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Payments</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Mobile App</p>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-base tracking-[1px]">Features</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Booking</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Create Event</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Discover</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Register</p>
-                    </div>
-                    <div>
-                        <p class="font-semibold text-base tracking-[1px]">Company</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Partnership</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Help</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Terms of Service</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Privacy Policy</p>
-                        <p class="text-[#C1C5D0] tracking-[1px] mt-5 text-sm">Sitemap</p>
+                    <div class="flex flex-col gap-3">
+                        <p class="font-medium text-sm">Find events you love with our</p>
+                        <div class="flex flex-row gap-2.5">
+                            <img src="/assets/findevent1.png" alt="findevent1">
+                            <img src="/assets/findevent2.png" alt="findevent2">
+                            <img src="/assets/findevent3.png" alt="findevent3">
+                            <img src="/assets/findevent4.png" alt="findevent4">
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </main>
-    </div>
+                <div>
+                    <p class="font-semibold text-base tracking-[1px]">Wetick</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">About Us</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Features</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Blog</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Payments</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Mobile App</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-base tracking-[1px]">Features</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Booking</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Create Event</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Discover</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Register</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-base tracking-[1px]">Company</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Partnership</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Help</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Terms of Service</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Privacy Policy</p>
+                    <p class="text-[#C1C5D0] tracking-[1px] mt-5">Sitemap</p>
+                </div>
+            </div>
+            <div class="">
+                <p class="font-semibold text-base">&copy;2020 Wetick All Rights Reserved</p>
+            </div>
+        </div>
+
+    </footer>
+    <script>
+        feather.replace()
+    </script>
 </body>
 </html>
